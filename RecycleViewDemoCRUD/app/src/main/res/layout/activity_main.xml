@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Input a new cat"
+        android:textSize="18dp"
+        android:gravity="center"
+         />
+        <Spinner
+            android:id="@+id/img"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+       <EditText
+           android:id="@+id/name"
+           android:hint="enter name"
+           android:textSize="12dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/describe"
+        android:hint="enter describe"
+        android:textSize="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/price"
+        android:hint="enter price"
+        android:textSize="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/eTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="nhap gio"/>
+    <EditText
+        android:id="@+id/eDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="nhap ngay"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btAdd"
+            android:text="Add"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btUpdate"
+            android:text="Update"
+            android:textSize="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btAll"
+            android:text="Get All"
+            android:textSize="12dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <SearchView
+        android:id="@+id/search"
+        android:queryHint="Search view"
+        android:iconifiedByDefault="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
